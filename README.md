@@ -13,7 +13,7 @@ Datasets can be found in the input folder
   ```
   cd GenerativeLSTM
   conda env create -f environment.yml
-  conda activate lstm-caise23
+  conda activate lstm
   ```
 ## Running the script
 
