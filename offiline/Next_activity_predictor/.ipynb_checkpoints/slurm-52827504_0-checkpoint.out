@@ -1,0 +1,98 @@
+Reading log traces ...      [DONE]
+Analysing resource pool 20.0%...      Analysing resource pool 40.0%...      Analysing resource pool 60.0%...      Analysing resource pool 80.0%...      Analysing resource pool 100.0%...      [DONE]
+Model: "model"
+__________________________________________________________________________________________________
+ Layer (type)                Output Shape                 Param #   Connected to                  
+==================================================================================================
+ activity (InputLayer)       [(None, 1)]                  0         []                            
+                                                                                                  
+ role (InputLayer)           [(None, 1)]                  0         []                            
+                                                                                                  
+ activity_embedding (Embedd  (None, 1, 3)                 24        ['activity[0][0]']            
+ ing)                                                                                             
+                                                                                                  
+ role_embedding (Embedding)  (None, 1, 3)                 27        ['role[0][0]']                
+                                                                                                  
+ dot_product (Dot)           (None, 1, 1)                 0         ['activity_embedding[0][0]',  
+                                                                     'role_embedding[0][0]']      
+                                                                                                  
+ reshape (Reshape)           (None, 1)                    0         ['dot_product[0][0]']         
+                                                                                                  
+==================================================================================================
+Total params: 51 (204.00 Byte)
+Trainable params: 51 (204.00 Byte)
+Non-trainable params: 0 (0.00 Byte)
+__________________________________________________________________________________________________
+/gpfs/helios/home/muhamm93/casise25-predictors/Next_activity_predictor/model_training/embedding_training.py:67: UserWarning: `Model.fit_generator` is deprecated and will be removed in a future version. Please use `Model.fit`, which supports generators.
+  model.fit_generator(gen, epochs=100,
+Epoch 1/100
+51/51 - 2s - loss: 0.1763 - 2s/epoch - 48ms/step
+Epoch 2/100
+51/51 - 2s - loss: 0.0593 - 2s/epoch - 32ms/step
+Epoch 3/100
+51/51 - 2s - loss: 0.0320 - 2s/epoch - 32ms/step
+Epoch 4/100
+51/51 - 2s - loss: 0.0159 - 2s/epoch - 32ms/step
+Epoch 5/100
+51/51 - 2s - loss: 0.0072 - 2s/epoch - 33ms/step
+Epoch 6/100
+51/51 - 2s - loss: 0.0030 - 2s/epoch - 32ms/step
+Epoch 7/100
+51/51 - 2s - loss: 0.0023 - 2s/epoch - 32ms/step
+Epoch 8/100
+51/51 - 2s - loss: 0.0020 - 2s/epoch - 32ms/step
+Epoch 9/100
+51/51 - 2s - loss: 0.0018 - 2s/epoch - 32ms/step
+Epoch 10/100
+51/51 - 2s - loss: 0.0018 - 2s/epoch - 32ms/step
+Epoch 11/100
+51/51 - 2s - loss: 0.0018 - 2s/epoch - 32ms/step
+Epoch 12/100
+51/51 - 2s - loss: 0.0019 - 2s/epoch - 32ms/step
+Epoch 13/100
+51/51 - 2s - loss: 0.0017 - 2s/epoch - 32ms/step
+Epoch 14/100
+51/51 - 2s - loss: 0.0020 - 2s/epoch - 31ms/step
+Epoch 15/100
+51/51 - 2s - loss: 0.0018 - 2s/epoch - 31ms/step
+Epoch 16/100
+51/51 - 2s - loss: 0.0016 - 2s/epoch - 32ms/step
+Epoch 17/100
+51/51 - 2s - loss: 0.0017 - 2s/epoch - 32ms/step
+Epoch 18/100
+51/51 - 2s - loss: 0.0019 - 2s/epoch - 32ms/step
+Epoch 19/100
+51/51 - 2s - loss: 0.0018 - 2s/epoch - 32ms/step
+Epoch 20/100
+51/51 - 2s - loss: 0.0017 - 2s/epoch - 32ms/step
+Epoch 21/100
+51/51 - 2s - loss: 0.0018 - 2s/epoch - 31ms/step
+Epoch 22/100
+51/51 - 2s - loss: 0.0018 - 2s/epoch - 31ms/step
+Epoch 23/100
+51/51 - 2s - loss: 0.0018 - 2s/epoch - 31ms/step
+Epoch 24/100
+51/51 - 2s - loss: 0.0018 - 2s/epoch - 31ms/step
+Epoch 25/100
+51/51 - 2s - loss: 0.0018 - 2s/epoch - 31ms/step
+Epoch 26/100
+51/51 - 2s - loss: 0.0018 - 2s/epoch - 31ms/step
+Epoch 27/100
+51/51 - 2s - loss: 0.0019 - 2s/epoch - 31ms/step
+Epoch 28/100
+51/51 - 2s - loss: 0.0017 - 2s/epoch - 31ms/step
+Epoch 29/100
+51/51 - 2s - loss: 0.0018 - 2s/epoch - 31ms/step
+Epoch 30/100
+51/51 - 2s - loss: 0.0018 - 2s/epoch - 31ms/step
+Epoch 31/100
+51/51 - 2s - loss: 0.0017 - 2s/epoch - 31ms/step
+Epoch 32/100
+51/51 - 2s - loss: 0.0016 - 2s/epoch - 31ms/step
+Epoch 33/100
+51/51 - 2s - loss: 0.0018 - 2s/epoch - 31ms/step
+Epoch 34/100
+51/51 - 2s - loss: 0.0019 - 2s/epoch - 31ms/step
+Epoch 35/100
+51/51 - 2s - loss: 0.0018 - 2s/epoch - 31ms/step
+Epoch 36/100
